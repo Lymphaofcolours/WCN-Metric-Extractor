@@ -15,7 +15,7 @@ def input_file_path():
     :return: str: Input filepath. Detect invalid inputs and ask for path again.
     '''
     try:
-        filepath: str = input('Please, Insert Your Input Directory') or '/home/lympha/RAS/isoraspdb/'
+        filepath: str = input('Please, Insert Your Input Directory') or '/tmp/RAS/'
         print('This process is computationally intensive. Make yourself a coffee. A big one.')
         return str(filepath)
     except ValueError:
@@ -24,10 +24,10 @@ def input_file_path():
 
 def output_file_path():
     '''
-    :return: str: Input filepath. Detect invalid inputs and ask for path again.
+    :return: str: Output filepath. Detect invalid inputs and ask for path again.
     '''
     try:
-        filepath: str = input('Please, Insert Your Output Directory') or '/home/lympha/RAS/csv/'
+        filepath: str = input('Please, Insert Your Output Directory') or '/tmp/RAS/'
         return str(filepath)
     except ValueError:
         print('Wrong Input. Please, Try Again:')
